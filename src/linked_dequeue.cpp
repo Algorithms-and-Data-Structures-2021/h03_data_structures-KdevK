@@ -24,8 +24,8 @@ void LinkedDequeue::EnqueueFront(Element e) {
         front_ = node;
         back_ = node;
     } else {
-        back_ -> next = node;
-        back_ = node;
+        front_ -> next = node;
+        front_ = node;
     }
     size_ += 1;
 }
